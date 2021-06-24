@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp">
+
+                <ImageView
+                    android:id="@+id/img_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="276dp"
+                    android:scaleType="centerCrop"
+                    tools:src="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/tv_item_name"
+                    style="@style/TextContent.Small"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="@color/white"
+                    android:background="#4D000032"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_vertical"
+                    android:padding="6dp"
+                    tools:text="@string/coffee_name" />
+            </FrameLayout>
+
+        <TextView
+            style="@style/TextContent"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/price"/>
+        
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <TableRow>
+                    <TextView
+                        style="@style/PriceStyle"
+                        android:textStyle="bold"
+                        android:text="@string/rp"
+                        android:layout_marginStart="16dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_item_price"
+                        style="@style/PriceStyle"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/price"/>
+            </TableRow>
+        </TableLayout>
+
+        
+        <TextView
+            style="@style/TextContent"
+            android:layout_marginTop="16dp"
+            android:lineSpacingMultiplier="1"
+            android:id="@+id/tv_item_detail"
+            tools:text="@string/detail" />
+
+
+        <Button
+            android:id="@+id/btn_share"
+            style="@style/ButtonGeneral"
+            android:text="@string/share"/>
+
+    </LinearLayout>
+
+</ScrollView>

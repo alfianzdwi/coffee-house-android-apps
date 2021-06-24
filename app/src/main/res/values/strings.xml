@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Coffe`House</string>
+    <string name="coffee_name">Nama Coffee</string>
+    <string name="detail">Detail</string>
+    <string name="profile">About</string>
+    <string name="price">Price</string>
+    <string name="rp">Rp.</string>
+    <string name="share">Share</string>
+    <string name="email">alfiandwiprayoaga12@gmail.com</string>
+    <string name="nama">Alfian Dwi Prayoga</string>
+</resources>
